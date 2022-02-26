@@ -1,5 +1,5 @@
 .square {
-    animation: MoveUpDown 25s linear infinite;
+    animation: MoveUpDown 21s linear infinite;
     position: absolute;
     left: 5%;
     bottom: 10%;
@@ -9,7 +9,7 @@
 }
 
 .square0 {
-    animation: MoveUpDown 29s linear infinite;
+    animation: MoveUpDown 15s linear infinite;
     position: absolute;
     left: 90%;
     bottom: 40%;
@@ -19,7 +19,7 @@
 }
 
 .circle {
-    animation: MoveUpDown 20s linear infinite;
+    animation: MoveUpDown 16s linear infinite;
     position: absolute;
     left: 20%;
     bottom: 40%;
@@ -30,10 +30,10 @@
 }
 
 .circle0 {
-    animation: MoveUpDown 23s linear infinite;
+    animation: MoveUpDown 18s linear infinite;
     position: absolute;
     left: 80%;
-    bottom: 60%;
+    bottom: 65%;
     height: 7vh;
     width: 7vh;
     border-radius: 50%;
@@ -41,7 +41,7 @@
 }
 
 .triangle {
-    animation: MoveUpDown 18s linear infinite;
+    animation: MoveUpDown 20s linear infinite;
     position: absolute;
     left: 10%;
     bottom: 70%;

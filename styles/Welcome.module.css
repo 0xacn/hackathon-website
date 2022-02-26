@@ -1,0 +1,34 @@
+.title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    width: 70rem;
+    text-align: center;
+}
+
+.subtitle {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.circle {
+    position: fixed;
+    width: 100vh;
+    height: 65vh;
+    left: 50%;
+    top: 125%;
+    transform: translate(-50%, -50%);
+    background: rgba(248, 55, 55, 0.68);
+    filter: blur(6vh);
+    border-radius: 75%;
+    z-index: 1;
+    overflow: none;
+    margin-bottom: 2.5em;
+  }

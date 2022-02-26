@@ -1,14 +1,17 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import toast, { Toaster } from 'react-hot-toast'
 import copy from 'copy-to-clipboard'
 import animated from '../styles/Animations.module.css'
+import React, { useState } from "react";
 
 export default function Home() {
   const installButton = () => {
     copy('npx run-whack');
-    toast.success('Copied to clipboard.');
+    toast.success('Copied to clipboard!')
   }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +26,7 @@ export default function Home() {
     <h1 className={styles.subtitle}>Literally the <em> easiest </em>way to terminate your macOS applications.</h1>
     </div>
   <div className={styles.buttonContainer}>
-    <a Link="/">
+    <a href="/auth">
         <button>
           Get started →
         </button>
@@ -41,10 +44,11 @@ export default function Home() {
       <div className={styles.getStartedContainer}>
        <button
          onClick={installButton} className={styles.getStarted}>
-         npx run-whack 📋
+         npx run-whack <b idName="clipboard">📋</b>
        </button>
+       <a Link href="/auth">Auth portal. Only for development- remeber to remove</a>
       </div>
-       <Toaster />
+       <Toaster position="bottom-left" />
    </div>
   )
 }

@@ -1,4 +1,15 @@
-import { getAuth, getRedirectResult, GithubAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, getRedirectResult, GithubAuthProvider, signInWithPopup, signInWithRedirect } from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import * as firebase from "firebase/app";
+import toast, { Toaster } from 'react-hot-toast'
+
+var firebaseConfig = require('../utils/firebaseConfig');
+
+export default function Home() {
+    return(
+        <h1>You are getting redirected.</h1>
+    )
+}
 
 const provider = new GithubAuthProvider();
 
@@ -24,9 +35,8 @@ getRedirectResult(auth)
   .then((result) => {
     const credential = GithubAuthProvider.credentialFromResult(result);
     if (credential) {
-      // This gives you a GitHub Access Token. You can use it to access the GitHub API.
       const token = credential.accessToken;
-      // ...
+      console.log('you are being redirected')
     }
 
     const user = result.user;
@@ -37,8 +47,10 @@ getRedirectResult(auth)
     const credential = GithubAuthProvider.credentialFromError(error);
 
     signOut(auth).then(() => {
+        toast.success('You have been looged out!')
       }).catch((error) => {
-          console.log('an error occured. Try again.')
+          toast.error(error.message);
       });
   });
+  <Toaster position="bottom-left" />
   });

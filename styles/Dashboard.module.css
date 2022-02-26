@@ -1,0 +1,17 @@
+.titles {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    width: 40rem;
+}
+
+.titles h1 {
+    font-size: 7rem;
+    color: #fff;
+}
+
+.titles h2 {
+    font-weight: 500;
+    position: absolute;
+    top: 70%;
+}
