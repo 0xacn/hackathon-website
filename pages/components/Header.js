@@ -9,6 +9,7 @@ export default function Header() {
          Sign up
        </button>
     </Link>
-        </div>
+<Link href="/login" className={styles.login}>Log in</Link>
+    </div>
     )
 }

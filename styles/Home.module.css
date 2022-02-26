@@ -54,10 +54,35 @@
   left: 60%;
   transform: translate(-50%, -50%);
 }
-
+/*
 .githubDirect {
   position: absolute;
   top: 95%;
   left: 50%;
   transform: translate(-50%, -50%);
+}*/
+
+.secOneTitle {
+  position: absolute;
+  font-size: 1rem;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.secOneContainer h2 {
+  position: absolute;
+  font-size: 2rem;
+  left: 70%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.secOneContainer p {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 70%;
+  top: 112%;
+  transform: translate(-50%, -50%);
+  width: 30rem
 }
