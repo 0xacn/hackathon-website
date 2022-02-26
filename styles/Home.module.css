@@ -43,12 +43,15 @@
 
 .getStarted {
   font-size: 1rem;
-  background-color: #626262;
+  background-color: #828282;
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   position: absolute;
+  font-family: monaco;
   top: 52%;
   left: 60%;
   transform: translate(-50%, -50%);
