@@ -37,13 +37,13 @@
   border-radius: 0.5rem;
   border: none;
   font-size: 1rem;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer
 }
 
 .getStarted {
   font-size: 1rem;
-  background-color: #828282;
+  background-color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
@@ -55,17 +55,4 @@
   top: 55%;
   left: 60%;
   transform: translate(-50%, -50%);
-}
-
-.diamond {
-  animation: MoveUpDown 1s linear infinite;
-}
-
-@keyframes diamond {
-  0%, 100% {
-    bottom: 0;
-  }
-  50% {
-    bottom: 100px;
-  }
 }

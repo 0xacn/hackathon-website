@@ -1,0 +1,52 @@
+.square {
+    animation: MoveUpDown 25s linear infinite;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    height: 8vh;
+    width: 8vh;
+    background-color: #DF2935;
+}
+
+.circle {
+    animation: MoveUpDown 20s linear infinite;
+    position: absolute;
+    left: 20%;
+    bottom: 40%;
+    height: 5vh;
+    border-radius: 50%;
+    width: 5vh;
+    background-color: #FDCA40;
+}
+
+.circle0 {
+    animation: MoveUpDown 23s linear infinite;
+    position: absolute;
+    left: 80%;
+    bottom: 60%;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    background-color: #5ee75e;
+}
+
+.triangle {
+    animation: MoveUpDown 18s linear infinite;
+    position: absolute;
+    left: 10%;
+    bottom: 70%;
+    width: 0; 
+    height: 0;
+    border-left: 5vh solid transparent;
+    border-right: 5vh solid transparent;
+    border-bottom: 9vh solid #3772FF;
+}
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }

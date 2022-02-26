@@ -2,14 +2,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import toast, { Toaster } from 'react-hot-toast'
 import copy from 'copy-to-clipboard'
-import { DuplicateIcon } from '@heroicons/react/outline'
-import { Circle, Square } from "react-awesome-shapes"
-import { animate } from "motion"
-import {useEffect} from "react"
+import animated from '../styles/Animations.module.css'
 
 export default function Home() {
   const installButton = () => {
-    copy('npx whack');
+    copy('npx run-whack');
     toast.success('Copied to clipboard.');
   }
   return (
@@ -28,33 +25,21 @@ export default function Home() {
   <div className={styles.buttonContainer}>
     <a Link="/">
         <button>
-          Get started. →
+          Get started →
         </button>
     </a>
   </div>
+  <div className={animated.square}></div>
+  <div className={animated.circle}></div>
+  <div className={animated.triangle}></div>
+  <div className={animated.circle0}></div>
 
-  <Square
-    color="linear-gradient(135deg, #fdba74, #f97316)"
-    size="8rem"
-    zIndex={2}
-    top="20%"
-    left= "70%"
-/>
-
-<Circle
-    color="linear-gradient(135deg, #a5b4fc, #6366f1)"
-    size={['100px', '50px', '80px', '80px']}
-    top="70%"
-    left="50%"
-    zIndex={2}
-/>
-
-<div className="box"></div>
+<p className={styles.githubDirect}>This project is open sourced at <a href="https://github.com/anddddrew/hackathon-website">github</a>.</p>
 
       <div className={styles.getStartedContainer}>
        <button
          onClick={installButton} className={styles.getStarted}>
-         npm install whack
+         npx run-whack 📋
        </button>
       </div>
        <Toaster />
@@ -62,18 +47,4 @@ export default function Home() {
   )
 }
 
-//<DuplicateIcon className="w-6 h-6 ml-2 -mr-3 text-gray-400" />
-//<div className="relative mt-3 rounded-md sm:mt-0 sm:ml-3">
-
-/*
-function Animate() {
-  useEffect(() => {
-    const boxes = document.querySelectorAll(".box")
-    
-    animate(
-      "#box",
-      { transform: "rotate(45deg)" },
-      { duration: 0.5 }
-    )
-  })}
-  */
+//</div> <DuplicateIcon className="w-6 h-6 ml-2 -mr-3 text-gray-400" /> <div className="relative mt-3 rounded-md sm:mt-0 sm:ml-3">  function Animate() {   useEffect(() => {     const boxes = document.querySelectorAll(".box")          animate(       "#box",       { transform: "rotate(45deg)" },       { duration: 0.5 }     )   })
