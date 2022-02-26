@@ -1,8 +1,13 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import toast, { Toaster } from 'react-hot-toast'
+import copy from 'copy-to-clipboard'
 
 export default function Home() {
+  const installButton = () => {
+    copy('npx whack');
+    toast.success('Copied to clipboard.');
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +28,14 @@ export default function Home() {
         </button>
     </a>
   </div>
-  <code className={styles.getStarted}>npx whack</code>
-    </div>
+
+      <div className={styles.getStartedContainer}>
+       <button
+         onClick={installButton} className={styles.getStarted}>
+         npm install whack
+       </button>
+      </div>
+       <Toaster />
+   </div>
   )
 }
