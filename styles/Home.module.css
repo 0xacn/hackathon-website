@@ -26,7 +26,7 @@
 
 .buttonContainer {
   position: absolute;
-  top: 52%;
+  top: 55%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
@@ -52,7 +52,20 @@
   padding-right: 2rem;
   position: absolute;
   font-family: monaco;
-  top: 52%;
+  top: 55%;
   left: 60%;
   transform: translate(-50%, -50%);
+}
+
+.diamond {
+  animation: MoveUpDown 1s linear infinite;
+}
+
+@keyframes diamond {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
 }
