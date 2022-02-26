@@ -1,0 +1,68 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.introContainer {
+  color: #ffffff;
+}
+
+.title {
+  font-size: 12rem;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  font-size: 2rem;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50rem;
+  text-align: center;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonContainer button {
+  height: 3rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer
+}
