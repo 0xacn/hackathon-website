@@ -3,13 +3,7 @@ import { initializeApp } from "firebase/app";
 import * as firebase from "firebase/app";
 import toast, { Toaster } from 'react-hot-toast'
 
-var firebaseConfig = require('../utils/firebaseConfig');
-
-export default function Home() {
-    return(
-        <h1>You are getting redirected.</h1>
-    )
-}
+var firebaseConfig = require('./firebaseConfig');
 
 const provider = new GithubAuthProvider();
 
@@ -20,7 +14,6 @@ signInWithPopup(auth, provider)
     const token = credential.accessToken;
 
     const user = result.user;
-    // ...
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
@@ -47,7 +40,7 @@ getRedirectResult(auth)
     const credential = GithubAuthProvider.credentialFromError(error);
 
     signOut(auth).then(() => {
-        toast.success('You have been looged out!')
+        toast.success('You have been logged out!')
       }).catch((error) => {
           toast.error(error.message);
       });

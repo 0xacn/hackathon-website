@@ -16,6 +16,8 @@
     font-weight: normal;
     font-size: 3rem;
     text-decoration: underline;
+    width: 50rem;
+    text-align: center;
 }
 
 .circle {
@@ -25,7 +27,7 @@
     left: 50%;
     top: 125%;
     transform: translate(-50%, -50%);
-    background: rgba(248, 55, 55, 0.68);
+    background: rgba(255, 0, 0, 0.68);
     filter: blur(6vh);
     border-radius: 75%;
     z-index: 1;

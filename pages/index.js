@@ -4,26 +4,29 @@ import styles from '../styles/Home.module.css'
 import toast, { Toaster } from 'react-hot-toast'
 import copy from 'copy-to-clipboard'
 import animated from '../styles/Animations.module.css'
-import React, { useState } from "react";
+import React, { useState } from "react"
+import Header from './components/Header'
 
 export default function Home() {
   const installButton = () => {
-    copy('npx run-whack');
+    copy('npx run-docked');
     toast.success('Copied to clipboard!')
   }
 
   return (
     <div className={styles.container}>
+       <Header></Header>
       <Head>
-        <title>Whack</title>
+        <title>Docked</title>
         <meta name="description" content="Literally the easiest way to terminate your macOS applications." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div className={styles.introContainer}>
         <h1 className={styles.title}>
-          Whack
+        Transforming<br/>
+        Containers.
         </h1>
-    <h1 className={styles.subtitle}>Literally the <em> easiest </em>way to terminate your macOS applications.</h1>
+    <h1 className={styles.subtitle}>Docked is the easiest way to to view your docker containers straight from the CLI.</h1>
     </div>
   <div className={styles.buttonContainer}>
     <a href="/auth">
@@ -44,10 +47,10 @@ export default function Home() {
       <div className={styles.getStartedContainer}>
        <button
          onClick={installButton} className={styles.getStarted}>
-         npx run-whack <b idName="clipboard">📋</b>
+         npx run-docked <b idName="clipboard">📋</b>
        </button>
-       <a Link href="/auth">Auth portal. Only for development- remeber to remove</a>
       </div>
+
        <Toaster position="bottom-left" />
    </div>
   )
