@@ -23,7 +23,7 @@ export default function Home() {
         </button>
     </a>
   </div>
-
+  <code className={styles.getStarted}>npx whack</code>
     </div>
   )
 }
