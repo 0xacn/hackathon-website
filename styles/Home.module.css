@@ -47,7 +47,7 @@
   cursor: pointer;
   border: none;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.8rem;
   padding-left: 2rem;
   padding-right: 2rem;
   position: absolute;
@@ -55,4 +55,15 @@
   top: 55%;
   left: 60%;
   transform: translate(-50%, -50%);
+}
+
+.githubDirect {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff
+}
+.githubDirect a {
+  text-decoration: underline
 }

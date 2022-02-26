@@ -8,6 +8,16 @@
     background-color: #DF2935;
 }
 
+.square0 {
+    animation: MoveUpDown 29s linear infinite;
+    position: absolute;
+    left: 90%;
+    bottom: 40%;
+    height: 11vh;
+    width: 11vh;
+    background-color: #2929df;
+}
+
 .circle {
     animation: MoveUpDown 20s linear infinite;
     position: absolute;

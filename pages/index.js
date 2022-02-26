@@ -20,7 +20,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Whack
         </h1>
-    <h1 className={styles.subtitle}>Literally the <b> easiest </b>way to terminate your macOS applications.</h1>
+    <h1 className={styles.subtitle}>Literally the <em> easiest </em>way to terminate your macOS applications.</h1>
     </div>
   <div className={styles.buttonContainer}>
     <a Link="/">
@@ -32,7 +32,9 @@ export default function Home() {
   <div className={animated.square}></div>
   <div className={animated.circle}></div>
   <div className={animated.triangle}></div>
+  <div className={animated.square0}></div>
   <div className={animated.circle0}></div>
+  <div className={animated.triangle0}></div>
 
 <p className={styles.githubDirect}>This project is open sourced at <a href="https://github.com/anddddrew/hackathon-website">github</a>.</p>
 
@@ -46,5 +48,3 @@ export default function Home() {
    </div>
   )
 }
-
-//</div> <DuplicateIcon className="w-6 h-6 ml-2 -mr-3 text-gray-400" /> <div className="relative mt-3 rounded-md sm:mt-0 sm:ml-3">  function Animate() {   useEffect(() => {     const boxes = document.querySelectorAll(".box")          animate(       "#box",       { transform: "rotate(45deg)" },       { duration: 0.5 }     )   })
